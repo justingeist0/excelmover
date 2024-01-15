@@ -1,0 +1,2000 @@
+const offenders = [
+    new SexOffender('דוד כץ ', 'לא ידוע', 'https://www.facebook.com/dudi.cohn.3', False),
+
+    new SexOffender('מוסא סראיעה', "אבו ג'ווייעד (שבט)", None, False),
+
+    new SexOffender('מבארכה, קוצאי', 'אבו סנאן', None, False),
+
+    new SexOffender('חאלד (בן אחמד) גידאוי', 'אבו סנאן', None, False),
+
+    new SexOffender('דניאל יעקב בנימין', 'אבן יהודה', None, False),
+
+    new SexOffender('צליל אדרי ', 'אבן יהודה', None, False),
+
+    new SexOffender('ירדן גוטמן', 'אומץ', None, False),
+
+    new SexOffender('אסף מיכאלי', 'אופקים', None, False),
+
+    new SexOffender('יורם גמזו', 'אור יהודה', None, False),
+
+    new SexOffender('חיים אייזנר מורה בברנקו וייס אור יהודה', 'אור יהודה', None, True),
+
+    new SexOffender('מני בלחדב', 'אור עקיבא', None, True),
+
+    new SexOffender('אלעד לזמי ', 'אור עקיבא', None, False),
+
+    new SexOffender('איתן לוי ', 'אורנית', None, False),
+
+    new SexOffender('סער ויטלם', 'אזור', 'https://www.facebook.com/saar.vitlem', False),
+
+    new SexOffender('מוחמד שלבי', 'איכסל', None, True),
+
+    new SexOffender('אלירן כהן', 'אילת', None, False),
+
+    new SexOffender('חיי פרץ', 'אילת', None, False),
+
+    new SexOffender('אלכס ', 'אילת', None, False),
+
+    new SexOffender('איתן דיכטרמן ', 'אילת', None, False),
+
+    new SexOffender('אפי קופולוביץ', 'אילת', None, False),
+
+    new SexOffender('אורי שלוש', 'אילת', None, False),
+
+    new SexOffender('מאיר בנימין אמגר', 'אילת', None, False),
+
+    new SexOffender('אטיה, חיים', 'אלעד', None, False),
+
+    new SexOffender('רונן טל רחמים', 'אלפי מנשה', None, False),
+
+    new SexOffender('קרמרמן נדב', 'אלקנה', None, False),
+
+    new SexOffender('ויסאם מחמד', 'אעבלין', None, False),
+
+    new SexOffender('עקיבא משה גליקמן', 'אפרת', None, False),
+
+    new SexOffender('רמי בוחניק', 'אריאל', None, False),
+
+    new SexOffender('אליאור גיל', 'אריאל', None, False),
+
+    new SexOffender('קראוני אבישי', 'אריאל', None, True),
+
+    new SexOffender('רוסלן (רוני) קורוטקוב', 'אשדוד', None, False),
+
+    new SexOffender('טל פאפ ', 'אשדוד', None, False),
+
+    new SexOffender('יהודה גורנו', 'אשדוד', None, False),
+
+    new SexOffender('ירון ביטון', 'אשדוד', None, False),
+
+    new SexOffender('לירן היימס', 'אשדוד', None, False),
+
+    new SexOffender('אוחיון קליף (כפיר)', 'אשדוד', None, False),
+
+    new SexOffender('אורן הראל', 'אשדוד', None, True),
+
+    new SexOffender('רומן מיכלין', 'אשדוד', None, False),
+
+    new SexOffender('יותם סיגרון', 'אשדוד', None, False),
+
+    new SexOffender('אייל קלפה', 'אשדוד', None, False),
+
+    new SexOffender('דוד דניאל נבט', 'אשדוד', None, True),
+
+    new SexOffender('ששון ווינר', 'אשדוד', None, False),
+
+    new SexOffender('שמעון דוקארקר', 'אשדוד', None, True),
+
+    new SexOffender('דניאל מיכאלי', 'אשדוד', None, False),
+
+    new SexOffender('אבירן נסימי', 'אשדוד', None, False),
+
+    new SexOffender('דביר לוין', 'אשדוד', None, False),
+
+    new SexOffender('מושיקו אלחדד', 'אשדוד', None, False),
+
+    new SexOffender('אנטו אבודולב', 'אשדוד', None, False),
+
+    new SexOffender('חיים טל', 'אשדוד', None, False),
+
+    new SexOffender('גיא שרון', 'אשדוד', 'https://www.facebook.com/profile.php?id=100000477088640&fref=ts', False),
+
+    new SexOffender('אלכסנדר פרונקו', 'אשדוד', None, False),
+
+    new SexOffender('טום שלו', 'אשדוד', None, False),
+
+    new SexOffender('צביקה ברגשטיין', 'אשל הנשיא', None, False),
+
+    new SexOffender('אלמוג מלכה', 'אשקלון', None, False),
+
+    new SexOffender('משה מרזוק', 'אשקלון', None, False),
+
+    new SexOffender('ניב חמו', 'אשקלון', None, False),
+
+    new SexOffender('אור עזר', 'אשקלון', None, False),
+
+    new SexOffender('יונתן לאיק', 'אשקלון', None, False),
+
+    new SexOffender('אור קנט', 'אשקלון', None, False),
+
+    new SexOffender('וילפרדו פאדילה גוניור', 'אשקלון', None, False),
+
+    new SexOffender('יונתן אליאסי ', 'אשקלון', None, False),
+
+    new SexOffender('סלבה סנדלר', 'אשקלון', None, False),
+
+    new SexOffender('רומן הסעות', 'אשקלון', None, False),
+
+    new SexOffender('יקיר סיבוני', 'אשקלון', None, False),
+
+    new SexOffender('נריה סניור', 'אשקלון', None, True),
+
+    new SexOffender('גיל אוהד נגר', 'אשקלון', None, True),
+
+    new SexOffender('גבריאל פרדג', 'אשקלון', None, True),
+
+    new SexOffender('רועי בוסקילה', 'אשקלון', None, True),
+
+    new SexOffender('דבוש, אסף', 'אשקלון', None, False),
+
+    new SexOffender('רומן גורליק', 'אשקלון', None, False),
+
+    new SexOffender('פיטר יהודאי', 'אשקלון', None, False),
+
+    new SexOffender('שמעון בן טוב', 'אשקלון', None, True),
+
+    new SexOffender('אברהם בורק', 'אשקלון', None, True),
+
+    new SexOffender('יוסף כלף', 'באקה אל גרביה', None, True),
+
+    new SexOffender('תאאר גרה', 'באקה אל גרביה', None, True),
+
+    new SexOffender('סאמי אבו מוך', 'באקה אל גרביה', None, False),
+
+    new SexOffender('גבריאל יוסיפוב', 'באר-שבע', None, False),
+
+    new SexOffender('אביחי סרף', 'באר-שבע', None, False),
+
+    new SexOffender('אמיר נעמנה', 'באר שבע', None, False),
+
+    new SexOffender('דביר דמרי', 'באר שבע', None, False),
+
+    new SexOffender('דורון זזון', 'באר שבע', None, False),
+
+    new SexOffender('דוד קבלו', 'באר שבע', None, False),
+
+    new SexOffender('צחי בן נפלא ', 'באר שבע', None, False),
+
+    new SexOffender('מאיר גובי', 'באר שבע', None, False),
+
+    new SexOffender('רון הינדי', 'באר שבע', None, False),
+
+    new SexOffender('עידן אזולאי', 'באר שבע', None, False),
+
+    new SexOffender('יוסף אבו', 'באר שבע', None, False),
+
+    new SexOffender('אלקדירי מאגד', 'באר שבע', None, True),
+
+    new SexOffender('ליאל אוריאן', 'באר שבע', None, False),
+
+    new SexOffender('דוקרקר, שמעון', 'באר שבע', None, False),
+
+    new SexOffender('חיים פרטוש', 'באר שבע', None, False),
+
+    new SexOffender('אמיניה, אבי שי', 'באר שבע', None, False),
+
+    new SexOffender('שלמה שטיינקויט', 'באר שבע', None, True),
+
+    new SexOffender('עיסא שמאל', 'באר שבע', None, False),
+
+    new SexOffender('דניאל פליסוב', 'באר שבע', None, False),
+
+    new SexOffender('ספיבק ודים', 'באר שבע', None, False),
+
+    new SexOffender('שרון סויסה', 'באר שבע', None, True),
+
+    new SexOffender('דגמי אדוארד', 'באר שבע', None, True),
+
+    new SexOffender('דוד לוגסי', 'באר שבע', None, False),
+
+    new SexOffender('Ibrahim eljo', 'באר שבע', 'https://www.facebook.com/ibro258', True),
+
+    new SexOffender('ליאור רובינוב', 'באר שבע', None, False),
+
+    new SexOffender('ניר מוסקוביץ', 'באר שבע', None, False),
+
+    new SexOffender('רונן יוסף', 'באר שבע', None, False),
+
+    new SexOffender('יוסף גואטה', 'באר שבע', None, False),
+
+    new SexOffender('יחיאל המר', 'באר שבע', None, False),
+
+    new SexOffender('קונסטנטין גרשון', 'באר שבע', None, True),
+
+    new SexOffender('יונתן סבהט', 'באר שבע', None, True),
+
+    new SexOffender('הרב שמואל נחמובסקי', 'באר שבע', None, False),
+
+    new SexOffender('ברטשנידר, עמית', 'בית אריה', None, True),
+
+    new SexOffender('רז אסף', 'בית גמליאלי', None, False),
+
+    new SexOffender('ליאור ערוסי', 'בית דגן', None, True),
+
+    new SexOffender('אדם מוגרבי', 'בית דגן', None, False),
+
+    new SexOffender('דור פורר', 'בית השיטה', None, False),
+
+    new SexOffender('רועי בר', 'בית השיטה', None, False),
+
+    new SexOffender('מאור פארנטה', 'בית יצחק', None, False),
+
+    new SexOffender('ברוך שוהם', 'בית עריף', None, True),
+
+    new SexOffender('אהרון שלמה לוין', 'בית שמש', None, True),
+
+    new SexOffender('בנימין זהר', 'בית שמש', None, True),
+
+    new SexOffender('אלעד גלעד חסיד', 'בית שמש', None, False),
+
+    new SexOffender('ירוחם זק', 'בית שמש', None, True),
+
+    new SexOffender('יעקב קרמר', 'בית שמש', None, False),
+
+    new SexOffender('יוסף רובל', 'בית שמש', None, False),
+
+    new SexOffender(' יוסף חיים אופק', 'בית שמש ', None, True),
+
+    new SexOffender('אריאל מיראנו גרונבאום', 'ביתר עלית', None, False),
+
+    new SexOffender('גיל מוזס', 'בן שמן', None, False),
+
+    new SexOffender('עוזיאל סולומון', 'בני ברק', None, False),
+
+    new SexOffender('משה שרגא גולדשטיין', 'בני ברק', None, True),
+
+    new SexOffender('משה שיוביץ', 'בני ברק', None, True),
+
+    new SexOffender('יאיר אדרי', 'בני ברק', None, True),
+
+    new SexOffender('שלמה כהן ', 'בני ברק', None, False),
+
+    new SexOffender('אליהו דוד', 'בני ברק', None, False),
+
+    new SexOffender('יצחק בחאש', 'בני ברק', None, False),
+
+    new SexOffender('אלי רוזנלט', 'בני ברק', None, False),
+
+    new SexOffender('דוד אליהו', 'בני ברק', None, False),
+
+    new SexOffender('מאיר לוי ', 'בני ברק', None, False),
+
+    new SexOffender('אבי פתאל יצחק', 'בני ברק', None, True),
+
+    new SexOffender('אביחי כהן ', 'בני עי"ש', None, False),
+
+    new SexOffender('אלעד כהן', 'בצת', None, False),
+
+    new SexOffender('שרון זבצקי', 'בת-ים', None, False),
+
+    new SexOffender('מוטי נשר', 'בת ים', None, False),
+
+    new SexOffender('רפאל אליהו בנאדוה', 'בת ים', None, False),
+
+    new SexOffender('שלום ארניאס', 'בת ים', None, False),
+
+    new SexOffender('מיכאל חסקין', 'בת ים', None, False),
+
+    new SexOffender('אבנר לוי', 'בת ים', None, False),
+
+    new SexOffender('ולאדלן דוידוב', 'בת ים', None, False),
+
+    new SexOffender('עומרי קלמי', 'בת ים', None, False),
+
+    new SexOffender('סלי לוגסי', 'בת ים', None, False),
+
+    new SexOffender('אושרי אוחיון', 'בת ים', None, False),
+
+    new SexOffender('אריה בן נחום', 'בת ים', None, False),
+
+    new SexOffender('שי (עובד עירית בת ים) 0524178294', 'בת ים', None, False),
+
+    new SexOffender('ירון סדלובסקי', 'בת ים', None, False),
+
+    new SexOffender('חיים בניזרי', 'גבעת עדה', 'https://www.facebook.com/people/%D7%97%D7%99%D7%99%D7%9D-%D7%91%D7%A0%D7%99%D7%96%D7%A8%D7%99/100002569309585', False),
+
+    new SexOffender('נועם שי', 'גבעת שמואל', None, False),
+
+    new SexOffender('אביחי צדוק', 'גבעת שמואל', None, False),
+
+    new SexOffender('אורן מוזס', 'גבעת שמואל', None, True),
+
+    new SexOffender('רייאן וולף', 'גבעת שמואל', None, False),
+
+    new SexOffender('אביתר גרוס', 'גבעת שמואל', None, False),
+
+    new SexOffender('דב שטימבוים ', 'גבעתי', None, False),
+
+    new SexOffender('יניב הלוי חמדי', 'גבעתיים', None, False),
+
+    new SexOffender('יוסף ריכטר', 'גבעתיים', None, False),
+
+    new SexOffender('גבאי יוסף', 'גבעתיים', None, True),
+
+    new SexOffender('הופרט ארז נפתלי', 'גבעתיים', None, True),
+
+    new SexOffender('רום בירנבאום', 'גבעתיים', None, False),
+
+    new SexOffender('אלעד לוי ', 'גבעתיים', None, True),
+
+    new SexOffender('אור בן צבי (רייף)', 'גבעתיים', None, True),
+
+    new SexOffender('רז עזרא וישניה', 'גבעתיים', None, True),
+
+    new SexOffender('תומר קרמר', 'גבעתיים', None, False),
+
+    new SexOffender('עופר', 'גבעתיים', None, False),
+
+    new SexOffender('אורן  רם', 'גבעתיים', None, False),
+
+    new SexOffender('יעקב נחום', 'גבעתיים', None, False),
+
+    new SexOffender('אלעד צברי ', 'גדרה', None, True),
+
+    new SexOffender('רואד הנו', 'גוליס', None, False),
+
+    new SexOffender('האדי הנו', 'גוליס', None, False),
+
+    new SexOffender('שאול איתי בנימין', 'גוש עציון', 'https://www.facebook.com/profile.php?id=1203143484', True),
+
+    new SexOffender('אהרן דנין ', 'גמזו', None, False),
+
+    new SexOffender('תום חדידה', 'גן יבנה', None, False),
+
+    new SexOffender('כרמלי ברק', 'גן יבנה', None, False),
+
+    new SexOffender('דב וירגיליס ', 'גן שמואל', None, False),
+
+    new SexOffender('מעיין פס', 'גשור', None, False),
+
+    new SexOffender('טארק אבו אלזלף', 'דאלית אל-כרמל', None, False),
+
+    new SexOffender('מוחמד מסאלחה', 'דבוריה', None, False),
+
+    new SexOffender('חסן חוסיין', 'דיר חנא', None, False),
+
+    new SexOffender('חיתאם חלבי', 'דלית אל כרמל', None, False),
+
+    new SexOffender('עידן מירון', 'הוד השרון', None, False),
+
+    new SexOffender('אלי בר-און', 'הוד השרון', None, True),
+
+    new SexOffender('ניר יונה גבע', 'הוד השרון', None, False),
+
+    new SexOffender('איציק איצחקוב', 'הוד השרון', None, False),
+
+    new SexOffender('גל יותם', 'הוד השרון', None, False),
+
+    new SexOffender('סמי גאיגי', 'הוד השרון', None, True),
+
+    new SexOffender('גל טננבום', 'הוד השרון', None, False),
+
+    new SexOffender('יובל חסון', 'הוד השרון', None, False),
+
+    new SexOffender('תומר כהן', 'הר הדר', None, True),
+
+    new SexOffender('אפרים חגלסקי', 'הרצליה', None, False),
+
+    new SexOffender('כפיר סריג', 'הרצליה', None, True),
+
+    new SexOffender('דבאח משה אור', 'הרצליה', None, True),
+
+    new SexOffender('ליאור מוסקוביץ', 'הרצליה', None, False),
+
+    new SexOffender('פיטוסי, דילן דניאל', 'הרצליה', None, False),
+
+    new SexOffender('גקי פסח', 'הרצליה', None, False),
+
+    new SexOffender('תום כוכבי', 'הרצליה', None, False),
+
+    new SexOffender('חיים מיכל', 'הרצליה', None, False),
+
+    new SexOffender('תמיר ניב', 'הרצליה', None, False),
+
+    new SexOffender('אלון אשטמקר', 'הרצליה', None, False),
+
+    new SexOffender('אשר פרידמן ', 'זכרון יעקב', None, False),
+
+    new SexOffender('דוד קריספין', 'חדרה', None, False),
+
+    new SexOffender('עמירם וגנר', 'חדרה', None, False),
+
+    new SexOffender('אמרי באק 311076467', 'חדרה', None, False),
+
+    new SexOffender('ייגיב ולרי', 'חדרה', None, False),
+
+    new SexOffender('שלומי מלכה', 'חדרה', None, True),
+
+    new SexOffender('אלכס פרי', 'חדרה', None, True),
+
+    new SexOffender('חנן מלכה', 'חדרה', None, False),
+
+    new SexOffender('ניר מיכאלי', 'חדרה', None, True),
+
+    new SexOffender('בר בן בסט', 'חדרה', None, False),
+
+    new SexOffender('בוריס מילמן', 'חדרה', None, False),
+
+    new SexOffender('חן שריון', 'חולון', None, False),
+
+    new SexOffender('ניסן מזרחי', 'חולון', None, False),
+
+    new SexOffender('תומר טומי מניר', 'חולון', None, False),
+
+    new SexOffender('מיכאל כהן', 'חולון', None, False),
+
+    new SexOffender('שי מלול', 'חולון', None, False),
+
+    new SexOffender('אביחי צבר', 'חולון', None, False),
+
+    new SexOffender('דורון קמלוף', 'חולון', None, True),
+
+    new SexOffender('אביב כהן', 'חולון', None, False),
+
+    new SexOffender('נמרוד נימרוד בן עוזיה', 'חולון', None, False),
+
+    new SexOffender('יהושוע שי עזוז', 'חולון', None, True),
+
+    new SexOffender('כפיר חיים ביטרן מולכו', 'חולון', None, False),
+
+    new SexOffender('ויקטור תשובה', 'חולון', None, False),
+
+    new SexOffender('צריקר ליאור', 'חולון', None, False),
+
+    new SexOffender('איתן אליהו', 'חולון', None, False),
+
+    new SexOffender('גליק, אוריאל', 'חולון', None, False),
+
+    new SexOffender('יוסיעזרא אלמוזלינוס', 'חולון', None, False),
+
+    new SexOffender('אלברט אברמוב', 'חולון', None, True),
+
+    new SexOffender('מיכאל מישען', 'חולון', None, False),
+
+    new SexOffender('גל כהן', 'חולון', None, False),
+
+    new SexOffender('שלמה מערבי', 'חולון', None, False),
+
+    new SexOffender('נתן זקן', 'חיפה', None, False),
+
+    new SexOffender('מתן עזרן', 'חיפה', None, False),
+
+    new SexOffender('ניר פרקש', 'חיפה', None, False),
+
+    new SexOffender('מונדר אבו שקארה', 'חיפה', None, False),
+
+    new SexOffender('לוי עמיאל', 'חיפה', None, False),
+
+    new SexOffender('ולדימיר לבוב', 'חיפה', None, False),
+
+    new SexOffender('אנטואן אוביאד', 'חיפה', None, False),
+
+    new SexOffender('ניר אליהו', 'חיפה', None, False),
+
+    new SexOffender('מרדכי אהרון נחמני,', 'חיפה', None, True),
+
+    new SexOffender('מוחמד בלעום', 'חיפה', None, False),
+
+    new SexOffender('מיכאל מיחייב', 'חיפה', None, False),
+
+    new SexOffender('רונן אייגר', 'חיפה', None, False),
+
+    new SexOffender('ענאן מזראייב', 'חיפה', None, False),
+
+    new SexOffender('מסרי זוהיר', 'חיפה', None, False),
+
+    new SexOffender('שי ברקת', 'חיפה', None, False),
+
+    new SexOffender('ננדור מאהלר', 'חיפה', None, False),
+
+    new SexOffender('אמיר חלבי', 'חיפה', None, False),
+
+    new SexOffender('עיסם קיטן', 'חיפה', 'https://www.facebook.com/issam.kittan', False),
+
+    new SexOffender('יניב הרשקוביץ', 'חיפה', None, False),
+
+    new SexOffender('אחמד עבד', 'חיפה', None, False),
+
+    new SexOffender('דורון וינשטין 0502114113', 'חיפה', 'https://www.facebook.com/doron.weinstein', False),
+
+    new SexOffender('איציק יוסף', 'חיפה', None, False),
+
+    new SexOffender('פאדי (בן דאוד) אשקר', 'חיפה', None, False),
+
+    new SexOffender('ד"ר אהוד מירון', 'חיפה', None, False),
+
+    new SexOffender('רונן שיך', 'חיפה', None, False),
+
+    new SexOffender('שחר רימוני', 'חיפה', None, False),
+
+    new SexOffender('ד"ר אוהד מירון', 'חיפה', None, False),
+
+    new SexOffender('קרול אייזק', 'חיפה', None, True),
+
+    new SexOffender('אבי נימני', 'חצור', None, False),
+
+    new SexOffender('חיים עמר', 'חשמונאים', None, False),
+
+    new SexOffender('גל בנימין', 'טבעון', None, False),
+
+    new SexOffender('זייד מזאריב', 'טבעון', None, False),
+
+    new SexOffender('שניר יצחק', 'טבריה', None, False),
+
+    new SexOffender('איתן עובד', 'טבריה', None, False),
+
+    new SexOffender('רונן גוזלן', 'טבריה', None, False),
+
+    new SexOffender('מיכה דהן', 'טבריה', None, False),
+
+    new SexOffender('בוטבול יעקב', 'טבריה', None, False),
+
+    new SexOffender('שניר יצחק', 'טבריה', None, False),
+
+    new SexOffender(' זיו יהודה  זו ארץ', 'טבריה', None, False),
+
+    new SexOffender('אמזלג, אלירן', 'טבריה', None, False),
+
+    new SexOffender('יפתח לוי ', 'טבריה', None, True),
+
+    new SexOffender('יצחק שמעון בן אבו', 'טבריה', None, False),
+
+    new SexOffender('מוחמד אגבריה', 'טוראען', None, True),
+
+    new SexOffender('עמאד אחמד אשקר (מורה)', 'טיבה', None, True),
+
+    new SexOffender(' טאופיק עאזם', 'טייבה', None, False),
+
+    new SexOffender('רומן ליפסקר', 'טירת הכרמל', None, False),
+
+    new SexOffender('אלכס לוין', 'טירת הכרמל', None, False),
+
+    new SexOffender('חיגאז מוחמד', 'טמרה', None, False),
+
+    new SexOffender('סתיו עמנואל גבע', 'יבנה', None, False),
+
+    new SexOffender('מנשה יוחאי מונדי', 'יבנה', None, False),
+
+    new SexOffender('שי מוסאקנוב', 'יבנה', None, False),
+
+    new SexOffender('פנקר, שמואל', 'יבנה', None, False),
+
+    new SexOffender('שלמה ליידר', 'יבנה', None, False),
+
+    new SexOffender('שמואל כהן', 'יהוד', None, False),
+
+    new SexOffender('אלעד שלף', 'יהוד', None, False),
+
+    new SexOffender(None, 'יהוד', None, True),
+
+    new SexOffender('נסים, עומרי יצחק', 'יהוד', None, False),
+
+    new SexOffender('עמוס נימני', 'יהוד', None, False),
+
+    new SexOffender('ישראל סיבוטרו', 'יוקנעם', None, False),
+
+    new SexOffender('יובל\xa0קוזיקרו', 'יוקנעם', None, True),
+
+    new SexOffender('כפיר רוטשילד', 'יוקנעם', None, False),
+
+    new SexOffender('אופיר סמימי', 'ירושלים', None, False),
+
+    new SexOffender('דוד חי בן זקן', 'ירושלים', None, False),
+
+    new SexOffender('אוראל  טורנהיים', 'ירושלים', None, False),
+
+    new SexOffender('מיכאל יעקב טורנהיים', 'ירושלים', None, False),
+
+    new SexOffender('שלומי פרסי', 'ירושלים', None, False),
+
+    new SexOffender('דוד עזרן', 'ירושלים', None, False),
+
+    new SexOffender('פאחור תאאר', 'ירושלים', None, False),
+
+    new SexOffender('דוד עזרן', 'ירושלים', None, False),
+
+    new SexOffender('שימי בר', 'ירושלים', None, False),
+
+    new SexOffender('משה נגדאי', 'ירושלים', None, False),
+
+    new SexOffender('שימי בר', 'ירושלים', None, False),
+
+    new SexOffender('רן פרימוביץ', 'ירושלים', None, False),
+
+    new SexOffender('דוד שלם', 'ירושלים', None, False),
+
+    new SexOffender('עמוס גושן', 'ירושלים', None, False),
+
+    new SexOffender('אלדד ביאזי', 'ירושלים', None, False),
+
+    new SexOffender('sean daniel', 'ירושלים', None, False),
+
+    new SexOffender('יוסף מוחתסב', 'ירושלים', None, True),
+
+    new SexOffender('רועי דוד', 'ירושלים', None, False),
+
+    new SexOffender('אלדר ביאזי', 'ירושלים', None, False),
+
+    new SexOffender('זהר איבגי', 'ירושלים', None, False),
+
+    new SexOffender('זהר איבגי', 'ירושלים', None, False),
+
+    new SexOffender('זהר איבגי', 'ירושלים', None, False),
+
+    new SexOffender('מיכאל פולב', 'ירושלים', None, False),
+
+    new SexOffender('משה זרצקי', 'ירושלים', None, False),
+
+    new SexOffender('יקי מזרחי', 'ירושלים', None, False),
+
+    new SexOffender('מנחם שיף', 'ירושלים', None, False),
+
+    new SexOffender('דניאל שמאע', 'ירושלים', None, True),
+
+    new SexOffender('אביתר עמדי', 'ירושלים', None, True),
+
+    new SexOffender('בבאזנוב נתנאל', 'ירושלים', None, False),
+
+    new SexOffender('בנימין אבינבאום', 'ירושלים', None, True),
+
+    new SexOffender('גילוני יוסף צבי', 'ירושלים', None, True),
+
+    new SexOffender('אלעד מורדכי', 'ירושלים', None, False),
+
+    new SexOffender('שמעוני, שמעון', 'ירושלים', None, False),
+
+    new SexOffender('זרצקי משה', 'ירושלים', None, False),
+
+    new SexOffender('חקקיאן, דוד', 'ירושלים', None, True),
+
+    new SexOffender('מוטי אמילר', 'ירושלים', None, False),
+
+    new SexOffender('דניאל פולב', 'ירושלים', None, False),
+
+    new SexOffender('ערן הרוש', 'ירושלים', None, False),
+
+    new SexOffender('תלמוד רוברט', 'ירושלים', None, False),
+
+    new SexOffender('עדי חיים שמעון', 'ירושלים', None, False),
+
+    new SexOffender('מתן מורנו', 'ירושלים', None, False),
+
+    new SexOffender('מתן ורטמן', 'ירושלים', None, False),
+
+    new SexOffender('חוזה קורדודוד', 'ירושלים', None, True),
+
+    new SexOffender('מוטי עזרן', 'ירושלים', None, True),
+
+    new SexOffender('יונתן כהן', 'ירושלים', None, False),
+
+    new SexOffender('מאור אסולין', 'ירושלים', 'https://www.facebook.com/Maor870', False),
+
+    new SexOffender('נועם גביזון', 'ירושלים', None, False),
+
+    new SexOffender('אייל גרצמן', 'ירושלים', None, False),
+
+    new SexOffender('אדיר נגר', 'ירושלים', None, False),
+
+    new SexOffender('נתנאל תורגמן', 'ירושלים', None, False),
+
+    new SexOffender('מיכאל מרסה', 'ירושלים', None, False),
+
+    new SexOffender('אלי לוי', 'ירושלים', None, False),
+
+    new SexOffender('מיקי הופמן', 'ירושלים', None, False),
+
+    new SexOffender('סמואל פרץ ', 'ירושלים', None, False),
+
+    new SexOffender('אביתר לארי', 'ירושלים', None, False),
+
+    new SexOffender('שחר זרביאן', 'ירושלים', None, False),
+
+    new SexOffender('יוסף שטרן', 'ירושלים', None, False),
+
+    new SexOffender('שרון הרוש', 'ירושלים', None, False),
+
+    new SexOffender('חוסאם תמימי', 'ירושלים', None, False),
+
+    new SexOffender('יקיר בן דוד', 'ירושלים', None, True),
+
+    new SexOffender('אברהם לשם', 'ירושלים', None, False),
+
+    new SexOffender('יששכר חברה', 'ירושלים', None, True),
+
+    new SexOffender('פטר בוגוד', 'ירושלים', None, True),
+
+    new SexOffender('ישראל חיים', 'ירושלים', None, False),
+
+    new SexOffender('דוד ברוקנר ', 'ירושלים', None, True),
+
+    new SexOffender('ראובן וולצר', 'ירושלים', None, False),
+
+    new SexOffender('שמואל חיים שחר', 'ירושלים', None, True),
+
+    new SexOffender('הרב שלמה חזן', 'ירושלים', None, False),
+
+    new SexOffender('אברהם מרדכי אלתר', 'ירושלים', None, False),
+
+    new SexOffender('מוסא פואקה', 'ירושלים', None, True),
+
+    new SexOffender('אלי לוי', 'ירושלים ', None, False),
+
+    new SexOffender('אוריאל מוניס', 'ירושלים ', None, False),
+
+    new SexOffender('גואד עלי', 'כאוכב אבו על היגא', 'https://www.facebook.com/jawad.ali.3956', False),
+
+    new SexOffender('עלי עוודה', 'כוכאבה אבו אל היגא', 'https://www.facebook.com/ali.aody', False),
+
+    new SexOffender('יונתן קליין', 'כפר-סבא', None, False),
+
+    new SexOffender('יצחק ליפסקר', 'כפר חב"ד', None, False),
+
+    new SexOffender('עו"ד יונתן סורקין', 'כפר חב"ד', None, False),
+
+    new SexOffender('עופר כהן', 'כפר יונה', 'https://www.facebook.com/ofer.cohen.73', False),
+
+    new SexOffender('חאמד חטיב', 'כפר מנדא', None, False),
+
+    new SexOffender('מאלק סרחאן', 'כפר מנדא-קצין', None, False),
+
+    new SexOffender('חנוך סמיט', 'כפר סבא', None, False),
+
+    new SexOffender('אלי לוי ', 'כפר סבא', None, False),
+
+    new SexOffender('אברהם מדאויל', 'כפר סבא', None, False),
+
+    new SexOffender('דרור בן נור', 'כפר סבא', None, False),
+
+    new SexOffender('אלי לוי ', 'כפר סבא', None, False),
+
+    new SexOffender('מזרחי גל משה', 'כפר סבא', None, True),
+
+    new SexOffender('בן שבת משה', 'כפר סבא', None, True),
+
+    new SexOffender('יוחנן הראל', 'כפר סבא', None, False),
+
+    new SexOffender('אמין עיסא ', 'כפר קאסם', None, False),
+
+    new SexOffender('עלאה עמר', 'כפר קאסם', None, True),
+
+    new SexOffender('סעיד הייכל', 'כפר קרע', None, True),
+
+    new SexOffender('עודאי אסלי ', 'כפר קרע', None, False),
+
+    new SexOffender('רועי עקיבא', 'כרמיאל', None, False),
+
+    new SexOffender('סגיר,סלאם', 'כרמיאל', None, False),
+
+    new SexOffender('רועי אמדו ', 'להבים', None, False),
+
+    new SexOffender('ליאור באזוב', 'לוד', None, True),
+
+    new SexOffender('משה ציזנה', 'לוד', None, False),
+
+    new SexOffender('סלבה סולימנוב', 'לוד', None, False),
+
+    new SexOffender('שחר נעים', 'לוד', None, False),
+
+    new SexOffender('הרב נתנאל דרעי', 'לוד', None, False),
+
+    new SexOffender('איתי בן ארויה', 'לוד', None, False),
+
+    new SexOffender('לירון דגן', 'מבשרת', None, True),
+
+    new SexOffender('דוד ', 'מגדל העמק', None, False),
+
+    new SexOffender('אליאור שם טוב', 'מגדל העמק', None, False),
+
+    new SexOffender('ינון דוד צדוק', 'מודיעין', None, True),
+
+    new SexOffender('מיכאל גלבוע', 'מודיעין', None, False),
+
+    new SexOffender('חנן שטיינמץ ', 'מודיעין', None, False),
+
+    new SexOffender('אהרון גואטא', 'מודיעין מכבים רעות', None, False),
+
+    new SexOffender('איתמר צחנובסקי', 'מחנים', None, False),
+
+    new SexOffender('תמיר  תום ששון', 'מיתר', None, False),
+
+    new SexOffender('הראל יוסף וילנר', 'מכבים', None, False),
+
+    new SexOffender('יצחק אלבו ', 'מסילות', None, False),
+
+    new SexOffender('עמיחי שרפשטיין', 'מעגן מיכאל', None, True),
+
+    new SexOffender('גלעד ציחי', 'מעלה אדומים', None, False),
+
+    new SexOffender('אלירן לוטרמן', 'מעלה אדומים', None, False),
+
+    new SexOffender('משה לייבה', 'מעלה אדומים', None, True),
+
+    new SexOffender('אריה הרשקוביץ', 'מעלה אדומים', None, False),
+
+    new SexOffender('מקסים פודורוב', 'מעלה אדומים', None, True),
+
+    new SexOffender('נאש, מייקל', 'מעלות תרשיחא', None, False),
+
+    new SexOffender('חוסין זועבי', 'מצר - עפולה', None, False),
+
+    new SexOffender('שחאדה, סלאח אל דין', 'משהד', None, False),
+
+    new SexOffender('סרג סויסה', 'נהריה', None, False),
+
+    new SexOffender('דמיטרי סבלייב', 'נהריה', None, False),
+
+    new SexOffender('אורן לנקרי', 'נהריה', None, False),
+
+    new SexOffender('דני יעקב פרץ', 'נהריה', None, True),
+
+    new SexOffender('אלכסנדר דובניקוב', 'נהריה', None, False),
+
+    new SexOffender('רועי רוטשילד', 'נהריה', None, False),
+
+    new SexOffender('קוזלובסקי, אברהם יעקב', 'נהריה', None, False),
+
+    new SexOffender('אלכסי שמיס', 'נהריה', None, False),
+
+    new SexOffender('חגי אפללו', 'נהריה', None, False),
+
+    new SexOffender('חיים דמקינר', 'נהריה', None, False),
+
+    new SexOffender('טל לוי', 'נוה ימין', None, False),
+
+    new SexOffender('ליעוז כץ', 'נס ציונה', None, False),
+
+    new SexOffender('מיליכוב מיליך', 'נס ציונה', None, True),
+
+    new SexOffender('אותך עם מכנסי ספורט', 'נס ציונה', None, False),
+
+    new SexOffender('אילן פרידלנדר', 'נס ציונה', None, True),
+
+    new SexOffender('מוחמד שלאבנה ', 'נעצר', None, False),
+
+    new SexOffender('כמאל שמודרוק', 'נצרת', None, False),
+
+    new SexOffender('עלי קיים', 'נצרת', None, False),
+
+    new SexOffender('מוסא וסאם', 'נצרת', None, False),
+
+    new SexOffender("מג'ד סאמי", 'נצרת', None, True),
+
+    new SexOffender('חאלד גניים', 'נצרת', None, False),
+
+    new SexOffender('האני מחרום', 'נצרת', None, False),
+
+    new SexOffender('ד"ר אבי ברקאי', 'נצרת', None, False),
+
+    new SexOffender('שלום אזרד', 'נצרת עילית', None, True),
+
+    new SexOffender('אבי כהן', 'נשר', None, False),
+
+    new SexOffender('יניב בוחבוט', 'נתיבות', None, False),
+
+    new SexOffender('מיכאל שמר', 'נתיבות', None, False),
+
+    new SexOffender('יצחק ליריאח', 'נתיבות', None, False),
+
+    new SexOffender('אפרים קדושים', 'נתיבות', None, True),
+
+    new SexOffender('אושרי זגורי', 'נתניה', None, False),
+
+    new SexOffender('אלעזר גדות', 'נתניה', None, False),
+
+    new SexOffender('יונתן אבנרי ', 'נתניה', None, False),
+
+    new SexOffender('אור שקולר', 'נתניה', None, False),
+
+    new SexOffender('ניב אביטל', 'נתניה', 'https://www.facebook.com/avitalniv', False),
+
+    new SexOffender('אופק סף', 'נתניה', None, False),
+
+    new SexOffender('רפאל שער', 'נתניה', None, False),
+
+    new SexOffender('חיים בן לולו', 'נתניה', None, False),
+
+    new SexOffender('אוראל עדי ביטון', 'נתניה', None, True),
+
+    new SexOffender('מאור שלום', 'נתניה', None, False),
+
+    new SexOffender('משה ואזנה', 'נתניה', None, False),
+
+    new SexOffender('בן אבו יצחק שמעון', 'נתניה', None, True),
+
+    new SexOffender('דוד שוקרון', 'נתניה', None, False),
+
+    new SexOffender('אור בינדר', 'נתניה', None, False),
+
+    new SexOffender('גניאך כץ', 'נתניה', None, False),
+
+    new SexOffender('ניר קמיסה', 'נתניה', None, False),
+
+    new SexOffender('רמי יצחק', 'נתניה', None, False),
+
+    new SexOffender('חמודי בדארנה', 'נתניה', None, False),
+
+    new SexOffender('אילן אוטמזגין', 'נתניה', None, False),
+
+    new SexOffender('דניאל כורמיאן (מורה)', 'נתניה', None, True),
+
+    new SexOffender('עפאן נדאל', 'סכנין', None, False),
+
+    new SexOffender('גיא נבו', 'עוזיר', None, False),
+
+    new SexOffender('דורון לוזון', 'עומר', None, False),
+
+    new SexOffender('רפי שרוף', 'עוספיה', None, False),
+
+    new SexOffender('אחמד אבו תנהא', 'עילוט', None, True),
+
+    new SexOffender('איתי אבידר', 'עין ורד', None, False),
+
+    new SexOffender('רבינוביץ ליאוניד', 'עין שריד', None, False),
+
+    new SexOffender('טל גרינברג', 'עכו', None, False),
+
+    new SexOffender('עראבי, לואי', 'עכו', None, False),
+
+    new SexOffender('שם טוב אוסדון', 'עכו', None, False),
+
+    new SexOffender('שרון רויזמן ', 'עכו', None, False),
+
+    new SexOffender('מועתז חסארמה', 'עכו', None, True),
+
+    new SexOffender('שרון סויסה ', 'עמקה', None, False),
+
+    new SexOffender('אביב אילוז', 'עפולה', None, False),
+
+    new SexOffender('אליאור קמחי פחימה', 'עפולה', None, False),
+
+    new SexOffender('נדאל אבו לייל', 'עפולה', None, False),
+
+    new SexOffender('משה וידוטה', 'עפולה', 'https://www.facebook.com/nadleen.aboleil.7', False),
+
+    new SexOffender('עואד, עואד', 'עפולה', 'https://www.facebook.com/mosheviduta', False),
+
+    new SexOffender('אלירן דהן', 'עפולה', None, False),
+
+    new SexOffender('אולג ירמלנקו', 'עפולה', None, True),
+
+    new SexOffender('אורי שמבי', 'עראבה', None, False),
+
+    new SexOffender('אגבריה אחמד', 'ערערה', None, False),
+
+    new SexOffender('אחמד חוסיין', 'פדיה', None, True),
+
+    new SexOffender('בענאוי, נימר', 'פורדיס', None, False),
+
+    new SexOffender('שחר סדובניק', 'פסוטה', None, True),
+
+    new SexOffender('אלירן דהן', 'פרדס חנה', None, False),
+
+    new SexOffender('דורון זילקוביץ', 'פרדס חנה', None, False),
+
+    new SexOffender('גולן וישניה', 'פרדס חנה', None, False),
+
+    new SexOffender('יואב בושמיץ ', 'פרדס חנה', None, False),
+
+    new SexOffender('שי קריסטלי', 'פרדסיה', None, False),
+
+    new SexOffender('לירון יוסי בוזגלו', 'פתח תקוה', None, False),
+
+    new SexOffender('צחי יצחקי', 'פתח תקוה', None, True),
+
+    new SexOffender('עומר כהן', 'פתח תקוה', None, False),
+
+    new SexOffender('אלמוג קינן', 'פתח תקוה', None, False),
+
+    new SexOffender('צחי יצחק', 'פתח תקוה', None, True),
+
+    new SexOffender('יונתן עזרא', 'פתח תקוה', None, False),
+
+    new SexOffender('הראל יעקובי שושן', 'פתח תקוה', None, False),
+
+    new SexOffender('קליו גרהם לוי', 'פתח תקוה', None, False),
+
+    new SexOffender('משה בבאי', 'פתח תקוה', None, False),
+
+    new SexOffender('אורן עבודי', 'פתח תקוה', None, False),
+
+    new SexOffender('ליאור שקרגי ', 'פתח תקוה', None, False),
+
+    new SexOffender('ציון בובליל', 'פתח תקוה', None, False),
+
+    new SexOffender('אמיר סרור', 'פתח תקוה', None, False),
+
+    new SexOffender('סמואל בלאכר (ד"ר פופיק)', 'פתח תקוה', None, False),
+
+    new SexOffender('ארז חיים', 'פתח תקוה', None, False),
+
+    new SexOffender('איתי בקל', 'פתח תקוה', None, False),
+
+    new SexOffender('ליאור שקרגי ', 'פתח תקוה', None, False),
+
+    new SexOffender('ליאור אלמליח', 'פתח תקוה', None, False),
+
+    new SexOffender('מתי עשור', 'פתח תקוה', None, False),
+
+    new SexOffender('רפי אברמוב', 'פתח תקוה', None, False),
+
+    new SexOffender('אבישי כהן', 'פתח תקוה', None, False),
+
+    new SexOffender('ישראל פפטא', 'פתח תקוה', None, False),
+
+    new SexOffender('שי ליחיאני', 'פתח תקוה', None, False),
+
+    new SexOffender('ערן פנחס קהת', 'פתח תקוה', None, False),
+
+    new SexOffender('ליאור שקרגי ', 'פתח תקוה', None, False),
+
+    new SexOffender('ששי נאור אשר', 'פתח תקוה', None, True),
+
+    new SexOffender('ערן ברק', 'פתח תקווה', None, False),
+
+    new SexOffender('עלי שוורץ', 'פתח תקווה', None, False),
+
+    new SexOffender('משה עבדה', 'פתח תקווה', None, False),
+
+    new SexOffender('אמיר לוי ', 'פתח תקווה', None, False),
+
+    new SexOffender('הוד צדקני', 'פתח תקווה', None, False),
+
+    new SexOffender('קלין גרהם לוי', 'פתח תקווה', None, False),
+
+    new SexOffender('גוסטאבו ציאו', 'פתח תקווה', None, False),
+
+    new SexOffender('ירון אברהם', 'פתח תקווה', None, False),
+
+    new SexOffender('עמית ידיד', 'פתח תקווה', None, False),
+
+    new SexOffender('אלי בגים', 'פתח תקווה', None, False),
+
+    new SexOffender('אלקנה, אודי', 'פתח תקווה', None, False),
+
+    new SexOffender('אושרי דהן', 'פתח תקווה', None, False),
+
+    new SexOffender('שרון, אסף', 'פתח תקווה', None, False),
+
+    new SexOffender('אלון אהרונוב', 'פתח תקווה', None, False),
+
+    new SexOffender('אלעד עמראן קרוואני', 'פתח תקווה', None, True),
+
+    new SexOffender('אבו-קראט, אליאור', 'צופים', None, False),
+
+    new SexOffender('נתן בס', 'צור יצחק', None, False),
+
+    new SexOffender('אגבריה אחמד', 'צלפון', None, False),
+
+    new SexOffender('ירון אמיר', 'צפון', None, False),
+
+    new SexOffender('האני עבד', 'צפון', None, False),
+
+    new SexOffender('יצחק ציוני', 'צפון', None, False),
+
+    new SexOffender('מרוד דניאל', 'צפת', None, True),
+
+    new SexOffender('שי איתי אמיר', 'קדימה', None, False),
+
+    new SexOffender('ניר דרורי', 'קיבוץ ארז', None, False),
+
+    new SexOffender('ניב שגיא', 'קיבוץ צרעה', None, False),
+
+    new SexOffender('יותם לאור', 'קיבוץ רגבים', None, False),
+
+    new SexOffender('אלעד פרחי', 'קיסריה', None, False),
+
+    new SexOffender('לירן ספאחי', 'קצרין', None, False),
+
+    new SexOffender('גיורא איגור  קלנר', 'קריות', None, False),
+
+    new SexOffender('גיורא קלנר', 'קרית אונו', None, False),
+
+    new SexOffender('ליאל כהן', 'קרית אונו', None, False),
+
+    new SexOffender('צחור ישי', 'קרית אונו', None, False),
+
+    new SexOffender('איתן טומבינג', 'קרית ארבע', None, False),
+
+    new SexOffender('מרדכי סעדיה', 'קרית ארבע', None, False),
+
+    new SexOffender('שמעון בוזגלו', 'קרית אתא', None, False),
+
+    new SexOffender('דימטרי קוקין', 'קרית אתא', None, False),
+
+    new SexOffender('אור ביטון', 'קרית אתא', None, True),
+
+    new SexOffender('איסחקוב, יעקב', 'קרית ביאליק', None, False),
+
+    new SexOffender('ארקדי מרדכי סרבריניאקוב', 'קרית ביאליק', None, False),
+
+    new SexOffender('קבלו דוד', 'קרית גת', None, False),
+
+    new SexOffender('איתי שוקרון', 'קרית גת', None, False),
+
+    new SexOffender('שמול גון קלוד', 'קרית גת', None, True),
+
+    new SexOffender('עדן גלנט', 'קרית גת', None, False),
+
+    new SexOffender('יוסף ראובני ', 'קרית גת ', None, False),
+
+    new SexOffender('ניר רום', 'קרית גת אדוריים 139', None, False),
+
+    new SexOffender('בירארוב גבריאל', 'קרית טבעון', None, False),
+
+    new SexOffender('יובל לנדמן', 'קרית ים', None, False),
+
+    new SexOffender('אורי שבתאי ', 'קרית מוצקין', None, False),
+
+    new SexOffender('כהנא אריה ', 'קרית מוצקין', None, False),
+
+    new SexOffender('עידן אליאסוב', 'קרית מוצקין', None, False),
+
+    new SexOffender('שמעון עמיר', 'קרית מוצקין', None, False),
+
+    new SexOffender('אורי שבתאי', 'חריש', 'https://www.facebook.com/orishabtai10', True),
+
+    new SexOffender('טל דה לוין', 'קרית מוצקין', None, False),
+
+    new SexOffender('מיכאל לוקשביץ', 'קרית מלאכי', None, False),
+
+    new SexOffender('זכי  עציוני', 'קרית עקרון', None, False),
+
+    new SexOffender('דהן רונן', 'קרית שמונה', None, False),
+
+    new SexOffender('גל בוסקילה', 'קרית שמונה', None, False),
+
+    new SexOffender('גיא חתוקה', 'קרית שמונה', None, True),
+
+    new SexOffender('חגי ערמי', 'ראש העין', None, False),
+
+    new SexOffender('יניב מעטוף', 'ראש העין', None, False),
+
+    new SexOffender('שלמה יפרח', 'ראש העין', None, True),
+
+    new SexOffender('רוני ליבוביץ', 'ראש העין', None, True),
+
+    new SexOffender('אביאל שלום', 'ראש העין', None, False),
+
+    new SexOffender('יובל גברא', 'ראש העין', None, False),
+
+    new SexOffender('רועי גולן', 'ראש העין', None, False),
+
+    new SexOffender('אלעד יחזקאל 0544466328', 'ראש העין', None, False),
+
+    new SexOffender('אהרון פולט', 'ראש העין', None, False),
+
+    new SexOffender('אלי לוי', 'ראש פינה', None, False),
+
+    new SexOffender('דני כחלון', 'ראשון לציון', None, False),
+
+    new SexOffender('הוד כאוי', 'ראשון לציון', None, False),
+
+    new SexOffender('אלעד ישראל', 'ראשון לציון', None, False),
+
+    new SexOffender('יבגני קירוב', 'ראשון לציון', 'https://www.facebook.com/roee.golan.1', False),
+
+    new SexOffender('מישל מאיר אלון', 'ראשון לציון', None, True),
+
+    new SexOffender('ששי חזקיה', 'ראשון לציון', None, False),
+
+    new SexOffender('אבי לוי', 'ראשון לציון', None, False),
+
+    new SexOffender('רונן ספיר', 'ראשון לציון', None, True),
+
+    new SexOffender('מאור דוד יחזקאל', 'ראשון לציון', None, False),
+
+    new SexOffender('ולדיסלב', 'ראשון לציון', None, False),
+
+    new SexOffender('נוסן בר ברנרד', 'ראשון לציון', None, False),
+
+    new SexOffender('רמי טצת', 'ראשון לציון', None, False),
+
+    new SexOffender('גיא בנימין', 'ראשון לציון', None, False),
+
+    new SexOffender('אבו מדעם ניאח', 'ראשון לציון', None, False),
+
+    new SexOffender('ששי חזקיה', 'ראשון לציון', 'https://www.facebook.com/profile.php?id=100000478571298', False),
+
+    new SexOffender('יניב דרוקר', 'ראשון לציון', None, False),
+
+    new SexOffender('סטניסלב פקר', 'ראשון לציון', None, False),
+
+    new SexOffender('בנו ריינהרון', 'ראשון לציון', None, True),
+
+    new SexOffender('חיים מדואל', 'ראשון לציון', None, True),
+
+    new SexOffender('סלימאן אלטורי', 'רהט', None, False),
+
+    new SexOffender('רועי גוזז', 'רחובות', None, False),
+
+    new SexOffender('בן חי מדחון', 'רחובות', None, False),
+
+    new SexOffender('שלומי סניור', 'רחובות', None, False),
+
+    new SexOffender('רונן אדלר ', 'רחובות', None, False),
+
+    new SexOffender("תומר\xa0ג'מיל", 'רחובות', None, True),
+
+    new SexOffender('דוד אייזיק', 'רחובות', None, False),
+
+    new SexOffender('ליאור מועלם', 'רחובות', None, False),
+
+    new SexOffender('אלגזר יהונתן', 'רחובות', None, False),
+
+    new SexOffender('אלכסנדר צרנין', 'רחובות', None, False),
+
+    new SexOffender('שי לוי', 'רחובות', None, False),
+
+    new SexOffender('אליעז כהן', 'רחובות', None, False),
+
+    new SexOffender('ברק דותן', 'רחובות', 'https://www.facebook.com/bdotan', False),
+
+    new SexOffender('רוברט יונתן גרוס', 'רחובות', None, True),
+
+    new SexOffender('גיל יצחקי ', 'רמלה', None, False),
+
+    new SexOffender('מוחמד אבו קרט', 'רמלה', None, False),
+
+    new SexOffender('שמואל אברהם', 'רמלה', None, False),
+
+    new SexOffender('אבו גאנם, מעאד', 'רמלה', None, False),
+
+    new SexOffender('אחות תהילה', 'רמלה', None, False),
+
+    new SexOffender('ליאר מור יוסף', 'רמלה', None, False),
+
+    new SexOffender('עמית זואילי', 'רמלה', None, False),
+
+    new SexOffender('ארז מצרי', 'רמת גן', None, False),
+
+    new SexOffender('תומר דניאלי', 'רמת גן', None, False),
+
+    new SexOffender('רועי שמעון צנשה ציון', 'רמת גן', None, False),
+
+    new SexOffender('דניאל זכאי', 'רמת גן', None, True),
+
+    new SexOffender('לירן ספאחי', 'רמת גן', None, False),
+
+    new SexOffender('רז גיא מקרוביץ', 'רמת גן', None, True),
+
+    new SexOffender('עידן יהודה כהן', 'רמת גן', None, False),
+
+    new SexOffender('אמיר אביבי', 'רמת גן', None, True),
+
+    new SexOffender('אליוט אזיז הגיאוף', 'רמת גן', None, True),
+
+    new SexOffender('עו"ד דורון איצקוביץ', 'רמת גן', None, False),
+
+    new SexOffender('טל גרין', 'רמת גן', None, False),
+
+    new SexOffender('מתן לוי', 'רמת גן', None, False),
+
+    new SexOffender('אלכסנדר קופרמן', 'רמת גן', None, True),
+
+    new SexOffender(' יהודה אריאל דניאל קפלן', 'רמת גן', None, False),
+
+    new SexOffender('שרון חן', 'רמת גן', None, False),
+
+    new SexOffender('משה כהן', 'רמת גן', None, False),
+
+    new SexOffender('שי סופר', 'רמת גן', None, False),
+
+    new SexOffender('איתמר רוזנברג', 'רמת גן', None, False),
+
+    new SexOffender('יוסף פרץ', 'רמת גן', None, False),
+
+    new SexOffender('יציק פרץ', 'רמת גן', None, False),
+
+    new SexOffender('אלי סויסה', 'רמת גן', None, False),
+
+    new SexOffender('יאיר סמו', 'רמת גן', None, False),
+
+    new SexOffender('ציון דגמי', 'רמת גן', None, True),
+
+    new SexOffender('דוד שושטרי', 'רמת גן', 'https://www.facebook.com/david.shosh.3', False),
+
+    new SexOffender('מתן שאולי ', 'רמת גן', None, False),
+
+    new SexOffender('ד"ר אלעד לאור ', 'רמת גן', None, False),
+
+    new SexOffender('נדב ישראל ', 'רמת גן', None, False),
+
+    new SexOffender('דור שמואלי', 'רמת השרון', None, False),
+
+    new SexOffender('שאול סעדיה', 'רמת השרון', None, False),
+
+    new SexOffender('גבריאל יצחקי', 'רעננה', None, False),
+
+    new SexOffender('בועז אמונה', 'רעננה', None, False),
+
+    new SexOffender('אנוחין דוד', 'רעננה', 'https://www.facebook.com/profile.php?id=100015738785082', False),
+
+    new SexOffender('מוטי\xa0פוואזאן', 'רעננה', None, True),
+
+    new SexOffender('אורי בנק', 'רעננה', None, True),
+
+    new SexOffender('איתן פאר', 'רעננה', None, False),
+
+    new SexOffender('מיקי- גגוס  0549165198', 'רעננה', None, False),
+
+    new SexOffender('איתן פאר', 'שדה בוקר', None, False),
+
+    new SexOffender('עופר עובדיה', 'שדה בוקר', None, False),
+
+    new SexOffender('שיי נסבך', 'שדה נחמיה', None, False),
+
+    new SexOffender('אופיר סויסה', 'שדרות', None, True),
+
+    new SexOffender('יוסי צרפתי', 'שדרות', None, True),
+
+    new SexOffender('מתן טירי ', 'שהם', None, False),
+
+    new SexOffender('חמיד אניס', 'שלומי', None, False),
+
+    new SexOffender('בניה יפת', 'שער אפרים', None, False),
+
+    new SexOffender('אמיר סטפאן', 'שפרעם', None, False),
+
+    new SexOffender('בוטרוס נמוז', 'שפרעם', None, False),
+
+    new SexOffender('סאלם', 'שפרעם', None, False),
+
+    new SexOffender('בן שלמה וורמזר', 'שפרעם', 'https://www.facebook.com/saleem.king.75', False),
+
+    new SexOffender('יוסף בלק', 'תל אביב', None, False),
+
+    new SexOffender('עידו כהן', 'תל אביב', None, False),
+
+    new SexOffender('יאיר בר', 'תל אביב', None, False),
+
+    new SexOffender('אקרמן ישראל ', 'תל אביב', None, True),
+
+    new SexOffender('ישראל אביגדול', 'תל אביב', None, False),
+
+    new SexOffender('שי אזולאי', 'תל אביב', None, False),
+
+    new SexOffender('ברק רנד', 'תל אביב', None, True),
+
+    new SexOffender('אברם אצילדייב', 'תל אביב', None, True),
+
+    new SexOffender('אופיר גפרי יפתח', 'תל אביב', None, True),
+
+    new SexOffender('רועי שקד', 'תל אביב', None, True),
+
+    new SexOffender('מני רומנסקי', 'תל אביב', None, False),
+
+    new SexOffender('פליקס רובינשטיין', 'תל אביב', None, True),
+
+    new SexOffender('ניר דרזי', 'תל אביב', None, False),
+
+    new SexOffender('יהודה קרוה', 'תל אביב', None, False),
+
+    new SexOffender('חיים בקייב', 'תל אביב', None, True),
+
+    new SexOffender('אורן שוורצברג', 'תל אביב', None, True),
+
+    new SexOffender('עידו רביב', 'תל אביב', None, True),
+
+    new SexOffender('שאול צברי', 'תל אביב', None, True),
+
+    new SexOffender('סאיל קסום', 'תל אביב', None, False),
+
+    new SexOffender('רמי כהן', 'תל אביב', None, False),
+
+    new SexOffender('אלי עמר', 'תל אביב', None, False),
+
+    new SexOffender('isidro leo cacho', 'תל אביב', None, False),
+
+    new SexOffender('ד"ר מאיר למפיט ', 'תל אביב', 'https://www.facebook.com/leo.cacho.902', False),
+
+    new SexOffender('משה מזן', 'תל אביב', None, False),
+
+    new SexOffender('נבו גזרון', 'תל אביב', None, False),
+
+    new SexOffender('ישראל אביגדול', 'תל אביב', None, False),
+
+    new SexOffender('אבנר גמליאל', 'תל אביב', None, False),
+
+    new SexOffender('יעקב אוזטובי', 'תל אביב', None, True),
+
+    new SexOffender('טורדגמן, יהונתן', 'תל אביב', None, False),
+
+    new SexOffender('ניר גור', 'תל אביב', None, False),
+
+    new SexOffender('רונן כהן ', 'תל אביב', None, False),
+
+    new SexOffender('מוני יעקובי', 'תל אביב', None, False),
+
+    new SexOffender('אפרים בן יאיר', 'תל אביב', None, False),
+
+    new SexOffender('קייקוב, מאיר יהודה', 'תל אביב', None, True),
+
+    new SexOffender('אליהו דיין', 'תל אביב', None, True),
+
+    new SexOffender('אבי נועם', 'תל אביב', None, False),
+
+    new SexOffender('רמי שמחייב', 'תל אביב', None, True),
+
+    new SexOffender('עזריאל כהן', 'תל אביב', None, False),
+
+    new SexOffender('אוהד בנאי', 'תל אביב', None, False),
+
+    new SexOffender('ישראל אביגדול', 'תל אביב', None, False),
+
+    new SexOffender('אבנר גמליאל', 'תל אביב', None, False),
+
+    new SexOffender('מיכה רביד', 'תל אביב', None, False),
+
+    new SexOffender('נוחי סולומונס', 'תל אביב', None, False),
+
+    new SexOffender('קליין דב', 'תל אביב', None, False),
+
+    new SexOffender('אור בנגייב', 'תל אביב', None, False),
+
+    new SexOffender('רמי כהן', 'תל אביב', None, False),
+
+    new SexOffender('לירן אמס', 'תל אביב', None, False),
+
+    new SexOffender('רועי לוי', 'תל אביב', None, False),
+
+    new SexOffender('שי פרנס', 'תל אביב', 'https://www.facebook.com/shai.parnes', False),
+
+    new SexOffender('גבי אנגל', 'תל אביב', None, False),
+
+    new SexOffender('תומר חבר', 'תל אביב', None, False),
+
+    new SexOffender('ירון קריג רפ"ק במשטרת ישראל ', 'תל אביב', None, False),
+
+    new SexOffender('יוסי אביוב', 'תל אביב', 'https://www.facebook.com/profile.php?id=100002028960170', False),
+
+    new SexOffender('שי וייס', 'תל אביב', None, True),
+
+    new SexOffender('חגי שפירא', 'תל אביב', None, False),
+
+    new SexOffender('נתי סוטיצקוב', 'תל אביב', None, False),
+
+    new SexOffender('קובי אלקיים', 'תל אביב', 'https://www.facebook.com/profile.php?id=100000421111355', False),
+
+    new SexOffender('אסף זיתוני', 'תל אביב', None, False),
+
+    new SexOffender('רון שושני', 'תל אביב', None, False),
+
+    new SexOffender('ניר הראל', 'תל אביב', None, False),
+
+    new SexOffender('חביב מסלם', 'תל אביב', None, False),
+
+    new SexOffender('משה שלומי', 'תל אביב', 'https://www.facebook.com/profile.php?id=100007709865626', False),
+
+    new SexOffender('אילן טובי', 'תל אביב', 'https://www.facebook.com/ilantubi', False),
+
+    new SexOffender('לוי ערן 0542201074', 'תל אביב', None, False),
+
+    new SexOffender('ציוני יונתן', 'תל אביב', None, False),
+
+    new SexOffender('נתי כהן 0544378662', 'תל אביב', 'https://www.facebook.com/profile.php?id=100001265022809&fref=ts', False),
+
+    new SexOffender('שאול ירימי ', 'תל אביב', None, False),
+
+    new SexOffender('אלי אלקסלסי', 'תל אביב', None, False),
+
+    new SexOffender('טל הגר', 'תל אביב', 'https://www.facebook.com/tal.hager', False),
+
+    new SexOffender('אלי עוקשי', 'תל אביב', None, False),
+
+    new SexOffender('יואב קורן', 'תל אביב', 'https://www.facebook.com/yoav.koren.77', False),
+
+    new SexOffender('עמרם גבע 0506700026', 'תל אביב', None, False),
+
+    new SexOffender('רונן ביטי ', 'תל אביב', None, False),
+
+    new SexOffender('עידן חוגי ', 'תל אביב', None, False),
+
+    new SexOffender('אברהם רוזנפלד', 'תל אביב', None, False),
+
+    new SexOffender('גרגורי בולשק', 'תל אביב', None, False),
+
+    new SexOffender('אורהאן אבו-עביד', 'תל אביב', None, False),
+
+    new SexOffender('יעקב ברקאי ', 'תל אביב', None, False),
+
+    new SexOffender('יעקב בן לולו ', 'תל אביב', None, False),
+
+    new SexOffender('רומן לוין ', 'תל אביב', None, False),
+
+    new SexOffender('תומר קרן', 'תל אביב', None, False),
+
+    new SexOffender('עוזי אביב', 'תל אביב', None, False),
+
+    new SexOffender('ד"ר עידן ברק', 'תל אביב', None, False),
+
+    new SexOffender('ד"ר עידן קוסובסקי', 'תל אביב', None, True),
+
+    new SexOffender('בני אבריאל שפר', 'תל אביב ', None, False),
+
+    new SexOffender('גיל ראובני', 'תל אביב ', None, True),
+
+    new SexOffender('אלי קיים', 'תל מונד', None, False),
+
+    new SexOffender('יהודה לוי ', 'לא ידוע', None, False),
+
+    new SexOffender('תום מירוז', 'לא ידוע', None, False),
+
+    new SexOffender('ראובן סמרה', 'לא ידוע', None, False),
+
+    new SexOffender('יהונתן שאלתיאל', 'לא ידוע', None, False),
+
+    new SexOffender('שי מופז', 'לא ידוע', None, False),
+
+    new SexOffender('נתנאל גיספן', 'באר טוביה', None, False),
+
+    new SexOffender('יניב הרשקוביץ', 'תל אביב', 'https://www.facebook.com/hershkovitz.yaniv', False),
+
+    new SexOffender('יעקב נחום', 'חיפה', 'https://www.facebook.com/jakovnahum', False),
+
+    new SexOffender('דרור הומינר', 'ירושלים', None, False),
+
+    new SexOffender('יצחק סופר', 'רמת אפרים', None, False),
+
+    new SexOffender('אורן פרימן', 'תל אביב', 'https://www.facebook.com/orenfreeman35', False),
+
+    new SexOffender('שחר שניידר', 'תל אביב', 'https://m.facebook.com/shr.snyydr1', False),
+
+    new SexOffender('יעקב איסחקוב', 'קרית גת', None, False),
+
+    new SexOffender('יותם יוספוב', 'ירושלים', None, False),
+
+    new SexOffender('אהרון שרגא', 'מעלה אדומים', None, False),
+
+    new SexOffender('שאול עדיקה', 'מעלה אדומים', None, False),
+
+    new SexOffender('דוד ארטיום כסיף פילוס', 'תל אביב', None, False),
+
+    new SexOffender('יובל וייס ', 'אפיקים', None, False),
+
+    new SexOffender('רועי אמדו', 'להבים', None, False),
+
+    new SexOffender('גיא ויליס', 'נתניה', None, False),
+
+    new SexOffender('חיים לייבל ', 'חיפה', None, False),
+
+    new SexOffender('ניר מור יוסף', 'רחובות', None, False),
+
+    new SexOffender('אלעד נעים', 'ראשון לציון', None, False),
+
+    new SexOffender('עידן פרץ', 'נהריה', None, False),
+
+    new SexOffender('מאיר ברק אביטל', 'תל אביב', None, False),
+
+    new SexOffender('יורם גמזו', 'יהוד', None, False),
+
+    new SexOffender('גיורא שווצבורד', 'חיפה', None, False),
+
+    new SexOffender('מוטי לוי', 'תל אביב', None, False),
+
+    new SexOffender('חיים עטר', 'תל אביב', None, False),
+
+    new SexOffender('בן חמדני ', 'ראשון לציון', 'https://www.facebook.com/hamdani12', False),
+
+    new SexOffender('חן ליאון', 'רחובות', None, False),
+
+    new SexOffender('טל לוי ', 'נס ציונה', None, False),
+
+    new SexOffender('סטיב סמית', 'כרמיאל', None, False),
+
+    new SexOffender('דימיטרי חיזגלוב', 'נשר', 'https://www.facebook.com/profile.php?id=100005728110718', False),
+
+    new SexOffender('איציק אביגזר', 'אשקלון', None, False),
+
+    new SexOffender('יונתן חיות ', 'דימונה', None, False),
+
+    new SexOffender('ירון חתוכה (מגן דוד אדום)', 'רמת גן', None, False),
+
+    new SexOffender('שלומי סרור', 'אשדוד', None, False),
+
+    new SexOffender('אברהם כהן', 'קרית אתא', None, False),
+
+    new SexOffender('רענן מסורי', 'פרדס חנה', None, False),
+
+    new SexOffender('גד לזר', 'יהוד', None, False),
+
+    new SexOffender('חיים כהן (מאמן ילדים בכדורגל)', 'הרצליה', None, False),
+
+    new SexOffender('אבי כהן ארזי', 'ירושלים', None, False),
+
+    new SexOffender('תומר בוזמן (משרד החינוך)', 'ירושלים', None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+    new SexOffender(None, None, None, False),
+
+];
